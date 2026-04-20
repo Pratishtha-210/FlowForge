@@ -1,4 +1,3 @@
-import React from 'react';
 import { useWorkflowStore } from '../store/useWorkflowStore';
 import { Terminal, X, CheckCircle, XCircle, Loader2 } from 'lucide-react';
 import { cn } from '../utils/cn';

@@ -13,7 +13,7 @@ export function ConfigPanel() {
   const nodeDef = selectedNode ? NodeRegistry[selectedNode.type || 'task'] : null;
   
   const { register, handleSubmit, reset, formState: { errors } } = useForm({
-    resolver: nodeDef?.schema ? zodResolver(nodeDef.schema) : undefined,
+    resolver: nodeDef?.schema ? zodResolver(nodeDef.schema as any) : undefined,
     defaultValues: selectedNode?.data.config || nodeDef?.defaultConfig || {}
   });
 

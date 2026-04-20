@@ -11,13 +11,13 @@ export const TaskNodeSchema = z.object({
 
 export const ApprovalNodeSchema = z.object({
   approverRole: z.enum(["Manager", "HR", "Finance"], {
-    errorMap: () => ({ message: "Please select a valid role" })
+    message: "Please select a valid role"
   }),
 });
 
 export const AutomatedNodeSchema = z.object({
   actionType: z.enum(["email", "slack", "webhook"], {
-    errorMap: () => ({ message: "Please select an action type" })
+    message: "Please select an action type"
   }),
 });
 

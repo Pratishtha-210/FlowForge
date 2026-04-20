@@ -1,4 +1,3 @@
-import React from 'react';
 import { Handle, Position, NodeToolbar } from '@xyflow/react';
 import { cn } from '../utils/cn';
 import { NodeRegistry } from '../registry';
